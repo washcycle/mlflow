@@ -262,7 +262,7 @@ Serving the Model
 Now that you have packaged your model using the MLproject convention and have identified the best model,
 it is time to deploy the model using :doc:`models`. An MLflow Model is a standard format for
 packaging machine learning models that can be used in a variety of downstream tools — for example,
-real-time serving through a REST API or batch inference on Apache Spark.
+real-time serving through a REST API or batch inference on Apache Spark. The default REST endpoint is accessible by this pattern ``http(s)//host:port/invocations``.
 
 In the example training code, after training the linear regression model, a function
 in MLflow saved the model as an artifact within the run.
